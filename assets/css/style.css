@@ -3,7 +3,8 @@ body {
   font-size: 16px;
   line-height: 25px;
   color: #777777;
-  
+  background-image: url("../images/gravel.png");
+  background-repeat: repeat;
 }
 
 * {
@@ -113,7 +114,7 @@ footer {
   background: #666666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
-}
+  }
 
 h3, h2 {
   padding-bottom: 20px;
@@ -126,8 +127,7 @@ h3, h2 {
 
 #main-container {
   padding-top: 0px;
-  background-image: url("../images/gravel.png");
-  background-repeat: repeat;
+
   min-height: calc(100vh - 70px);
   top: -10px;
   left: -10px;
