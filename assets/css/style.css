@@ -1,7 +1,7 @@
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 34px;
+  font-size: 16px;
+  line-height: 25px;
   color: #777777;
   background: url("../images/gravel.png");
 }
@@ -14,9 +14,13 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 auto;
   clear: both;
+}
+
+h1 {
+  margin-top: -10px;
 }
 
 h1,
@@ -53,14 +57,13 @@ h3 {
 /* header */
 
 #masthead {
-  position: fixed;
+  position: static;
   z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
+  margin: 0 0 0px 0px;
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
-  border-bottom: 2px solid #cccccc;
+  
 }
 
 #logo {
@@ -75,11 +78,13 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
+  margin-left: 40px;
 }
 
 nav {
   float: right;
   margin-top: 25px;
+  margin-right: 50px;
 }
 
 nav a {
@@ -120,33 +125,35 @@ h3, h2 {
 /* main */
 
 #main-container {
-  padding-top: 130px;
+  padding-top: 0px;
+  
   min-height: calc(100vh - 70px);
+  
 }
 
 .main-section {
   float: left;
-  width: 100%;
+  height: 800px;
+  width: 70%;
   max-width: 960px;
-  padding: 30px;
-  margin: 0 0 40px;
+  padding: 20px;
+  margin: 25px 0px 50px 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
 }
+
 
 /* portfolio page */
 
 .work {
   position: relative;
   float: left;
-  width: 274px;
-  margin: 20px 0 25px;
+  width: 200px;
+  margin: 0px 10px 20px;
   overflow: auto;
 }
 
-.work:nth-child(even) {
-  margin-right: 40px;
-}
+
 
 .work img {
   width: 100%;
@@ -170,16 +177,21 @@ h3, h2 {
 
 .auth-image {
   float: left;
-  width: 200px;
+  width: 150px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
+}
+
+.text-block {
+  font-size: 16px;
 }
 
 /* contact page */
 
 #contact-form ul {
   margin-bottom: 20px;
+  padding-left: 0px;
 }
 
 #contact-form li {
@@ -225,11 +237,20 @@ These rules take effect depending of the browser's width.
 
 @media screen and (max-width: 980px) {
 
-  /* The wrapper's width will be 600px */
   .wrapper {
-      width: 960px;
-      padding: 20px;
+      width: 980px;
+      position: relative;
+      top: -10px;
+      left: -10px;
+      padding: 10px;
+ 
   }
+  .main-container { 
+    top: -10px;
+    left: -10px;
+  
+  }
+
   p::first-line {
     color: purple;
     font-variant: small-caps;
@@ -241,12 +262,29 @@ These rules take effect depending of the browser's width.
   
 @media screen and (max-width: 768px) {
   
-  /* The wrapper's width will be 600px */
   .wrapper {
-      width: 600px;
-      padding: 20px;
+      width: 768px;
+      top: -10px;
+      left: -10px;
+      padding: 10px;
+    
   }
-
+  .work {
+    width: 45%;
+    padding: 0px;
+    margin-right: 25px;
+  }
+  .main-container { 
+    top: -10px;
+    left: -10px;
+  
+  }
+  .main-section {
+     width: 100%;
+     margin: 25px 0px 50px 0px;
+     height: 1200px;
+  
+  }
   p::first-line {
     color: blue;
     font-variant: small-caps;
@@ -257,23 +295,60 @@ These rules take effect depending of the browser's width.
     
 @media screen and (max-width: 640px) {
   
-
-  /* The wrapper's width will be 600px */
   .wrapper {
-      width: 600px;
-      padding: 20px;
+      width: 640px;
+      padding: 10px;
+      top: -10px;
+      left: -10px;
   }
+
+  .main-container { 
+    top: -10px;
+    left: -10px;
+    padding-top: 0px;
+  
+  }
+
+  .main-section {
+  height: 950px;
+  }
+
+  .auth-image { 
+    float: none;
+    width: 580px;
+  }
+
   #masthead {
     position: static;
 
   }
 
-  #main-container {
-    padding-top: 0px;
+  p {
+    line-height: 20px;
   }
+
+  .work {
+    width: 100%;
+  }
+
+  #logo {
+    float: none;
+    padding: 20px 196px 20px 196px;
+    margin-left: 0;
+    margin-top: 0; 
+  }
+
   p::first-line {
     color: red;
     font-variant: small-caps;
+  }
+
+  nav {
+    float: none;
+    margin-top: 0;
+    padding-left: 160px;
+    padding-bottom: 5px;
+
   }
 }
   
