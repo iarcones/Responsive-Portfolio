@@ -104,7 +104,7 @@ nav a:first-child {
 /* footer */
 
 footer {
-  padding: 30px 0;
+  padding: 30px;
   clear: both;
   font-size: 12px;
   color: #ffffff;
@@ -151,11 +151,9 @@ h3, h2 {
   position: relative;
   float: left;
   width: 200px;
-  margin: 0px 10px 20px;
+  margin: 0px 10px 20px 0px;
   overflow: auto;
 }
-
-
 
 .work img {
   width: 100%;
@@ -248,6 +246,10 @@ These rules take effect depending of the browser's width.
  
   }
 
+  .work {
+    width: 33%;
+    margin-right: 12px;
+  }
 
   p::first-line {
     color: purple;
@@ -267,17 +269,18 @@ These rules take effect depending of the browser's width.
       padding: 10px;
     
   }
-  .work {
-    width: 45%;
-    padding: 0px;
-    margin-right: 25px;
-  }
- 
+
   .main-section {
-     width: 100%;
-     margin: 25px 0px 50px 0px;
-  
+    width: 90%;
+    margin-top: 25px;
+
+ }
+ 
+  .work {
+    width: 47%;
+    margin-right: 12px;
   }
+
   p::first-line {
     color: blue;
     font-variant: small-caps;
@@ -295,13 +298,14 @@ These rules take effect depending of the browser's width.
       left: -10px;
   }
 
+  .main-section {
+    width: 90%;
+    margin-top: 25px;
 
-
-
-
+ }
   .auth-image { 
     float: none;
-    width: 580px;
+    width: 100%;
   }
 
   #masthead {
