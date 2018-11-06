@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 25px;
   color: #777777;
-  background: url("../images/gravel.png");
+  
 }
 
 * {
@@ -126,20 +126,22 @@ h3, h2 {
 
 #main-container {
   padding-top: 0px;
-  
+  background-image: url("../images/gravel.png");
+  background-repeat: repeat;
   min-height: calc(100vh - 70px);
-  
+  top: -10px;
+  left: -10px;
 }
 
 .main-section {
   float: left;
-  height: 800px;
   width: 70%;
-  max-width: 960px;
   padding: 20px;
+  padding-bottom: 50px;
   margin: 25px 0px 50px 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
+ 
 }
 
 
@@ -245,11 +247,7 @@ These rules take effect depending of the browser's width.
       padding: 10px;
  
   }
-  .main-container { 
-    top: -10px;
-    left: -10px;
-  
-  }
+
 
   p::first-line {
     color: purple;
@@ -274,15 +272,10 @@ These rules take effect depending of the browser's width.
     padding: 0px;
     margin-right: 25px;
   }
-  .main-container { 
-    top: -10px;
-    left: -10px;
-  
-  }
+ 
   .main-section {
      width: 100%;
      margin: 25px 0px 50px 0px;
-     height: 1200px;
   
   }
   p::first-line {
@@ -302,16 +295,9 @@ These rules take effect depending of the browser's width.
       left: -10px;
   }
 
-  .main-container { 
-    top: -10px;
-    left: -10px;
-    padding-top: 0px;
-  
-  }
 
-  .main-section {
-  height: 950px;
-  }
+
+
 
   .auth-image { 
     float: none;
